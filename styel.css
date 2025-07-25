@@ -1,0 +1,133 @@
+* {
+    /* margin: 0.5em; */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    color: gray;
+    height: 10vh;
+    padding: 0px 2vw;
+    margin-bottom: 10vh;
+    font-weight: bold;
+    font-size: 0.8VW;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav ul {
+    cursor: pointer;
+    gap: 50px;
+    padding: 0px 30px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li:hover {
+    color: black;
+}
+
+.button {
+    align-self: center;
+}
+
+.button button {
+    background-color: black;
+    color: white;
+    width: 6vw;
+    height: 4vh;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.button button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+/* Landing page */
+.landing-page {
+    height: calc(100% - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.center {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    align-self: center;
+    height: 40vh;
+    width: 96vw;
+}
+.bottom{
+    text-align: center;
+}
+
+.bottom h1{
+    margin: 0;
+    font-size: 30vw;
+}
+
+.landing-page-2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-2{
+    width: 96vw;
+    height: 80vh;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width:600px) {
+    .navbar .nav{
+        font-size: 2vw;
+        
+    }
+    .nav ul{
+        gap: 15px;
+    }
+    .button button{
+        padding: 13px;
+        width: 17vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+    .center {
+        width: 96vw;
+        height: 10vh;
+    }
+    .bottom h1{
+        font-size: 18vw;
+    }
+    .top-2{
+        height: 30vh;
+        width: 96vw;
+    }
+    .landing-page-2{
+        height: 100%;
+        margin-top: 7vh;
+        text-align: center;
+    }
+    
+}
